@@ -1,0 +1,124 @@
+{
+  "Menus": [
+    {
+      "name": "salads",
+      "menus": [
+        {
+          "name": "Porta nibh venenatis",
+          "weight": "300g",
+          "price": "14"
+        },
+        {
+          "name": "In dictum non consectetur",
+          "weight": "400g",
+          "price": "17"
+        },
+        {
+          "name": "Pharetra diam sit amet nisl suscipit",
+          "weight": "250g",
+          "price": "19"
+        },
+        {
+          "name": "Nauris in aliquam",
+          "weight": "300g",
+          "price": "14"
+        }
+      ]
+    },
+    {
+      "name": "main dishes",
+      "menus": [
+        {
+          "name": "Nibh venenatis cras sed felis eget velit",
+          "weight": "300g",
+          "price": "38"
+        },
+        {
+          "name": "Porta nibh venenatis cras sed felis eget velit",
+          "weight": "300g",
+          "price": "27"
+        },
+        {
+          "name": "Pharetra diam sit amet nisl suscipit",
+          "weight": "300g",
+          "price": "21"
+        }
+      ]
+    },
+    {
+      "name": "pasta",
+      "menus": [
+        {
+          "name": "Venenatis cras sed felis eget velit",
+          "weight": "300g",
+          "price": "30"
+        },
+        {
+          "name": "Egestas erat imperdiet sed",
+          "weight": "200g",
+          "price": "20"
+        },
+        {
+          "name": "Pharetra diam sit amet nisl suscipit",
+          "weight": "250g",
+          "price": "27"
+        },
+        {
+          "name": "Nauris in aliquam sem ullamcorper morb",
+          "weight": "300g",
+          "price": "29"
+        }
+      ]
+    },
+    {
+      "name": "desserts",
+      "menus": [
+        {
+          "name": "Imperdiet sed euismod",
+          "weight": "400g",
+          "price": "25"
+        },
+        {
+          "name": "Consectetur a era",
+          "weight": "200g",
+          "price": "15"
+        },
+        {
+          "name": "Nauris in aliquam",
+          "weight": "300g",
+          "price": "12"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "name": "Do Ngoc Minh",
+      "email": "john@example.com"
+    },
+    {
+      "id": 2,
+      "username": "admin",
+      "password": "admin",
+      "name": "Ngo Thi Hong Nhung",
+      "email": "john@example.com"
+    },
+    {
+      "id": 3,
+      "username": "admin",
+      "password": "admin",
+      "name": "Nguyen Huy Manh",
+      "email": "john@example.com"
+    },
+    {
+      "name": "Do Minh",
+      "username": "dominh",
+      "email": "dominh162002@gmail.com",
+      "password": "minh",
+      "id": 4
+    }
+  ]
+}

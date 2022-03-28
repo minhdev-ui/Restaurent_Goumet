@@ -1,0 +1,127 @@
+.banner {
+    &Inner {
+        border: 1px solid #292929;
+        &_icon {
+            display: block;
+            font-size: 30px;
+        }
+        &_btn {
+            display: block;
+        }
+    }
+}
+
+.menu {
+    &_title {
+        text-align: center;
+        letter-spacing: 8px;
+        h1{
+            font-size: 40px;
+            font-weight: 400;
+        }
+    }
+    &Food {
+        text-align: center;
+        padding: 10px;
+        img {
+            width: 100%;
+        }
+        h3 {
+            font-size: 40px;
+            margin: 0;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            color: #282828;
+            line-height: 24px;
+            margin: 0;
+        }
+    }
+    &Btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px 50px;
+    }
+}
+
+.btn {
+    padding: 20px 60px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 18px;
+    transition: 0.5s;
+    &:hover {
+        cursor: pointer;
+        background-color: #dd000a;
+    }
+}
+
+.btnAnimation {
+    &:hover {
+        animation-name: hangsink, bound;
+        animation-duration: .3s, 1.5s;
+        animation-delay: 0s, .3s;
+        animation-timing-function: ease-out, ease-in-out;
+        animation-iteration-count: 1, infinite;
+    }
+}
+@keyframes bound {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes hangsink {
+    0% {
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+
+.contact {
+    padding: 70px 20px;
+    background-color: #f7f7f7;
+    &_Img {
+        padding: 10px;
+    }
+    &Info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        text-align: center;
+        h2 {
+            font-size: 30px;
+            margin: 0;
+        }
+        p {
+            font-size: 16px;
+            margin: 0;
+            letter-spacing: 1px;
+            line-height: 20px;
+        }
+    }
+    &Btn {
+        margin-top: 20px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        a{
+            display: block;
+        }
+    }
+}

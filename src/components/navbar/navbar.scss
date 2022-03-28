@@ -1,0 +1,24 @@
+.nav-link {
+    position: relative;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 999;
+    span {
+        color: #fff;
+    }
+}
+
+.bgOverlay {
+    position: absolute;
+    height: 100%;
+    width: 2%;
+    background-color: transparent;
+    inset: 0;
+    z-index: -1;
+}
+
+.nav-link:hover .bgOverlay {
+    width: 100%;
+    transition: 0.3s;
+    background-color: red;
+}
