@@ -8,7 +8,7 @@ import Home from './components/home/home';
 import Navbar from './components/navbar/navbar';
 import '../node_modules/slick-carousel/slick/slick.css';
 import '../node_modules/slick-carousel/slick/slick-theme.css';
-// import About from "./components/about/about";
+import About from "./components/about/about";
 // import Menu from "./components/menu/menu";
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
@@ -34,8 +34,8 @@ function App() {
             <Route path="/admin/adminPage/menus" element={<Menus/>}/>
             <Route path="/admin/adminPage/chefs" element={<Chefs/>}/>
             <Route path="/" element={<Home/>}/>
-            {/* <Route path="about" element={<About/>}/>
-            <Route path="menu" element={<Menu/>}/> */}
+            <Route path="about" element={<About/>}/>
+            {/* <Route path="menu" element={<Menu/>}/> */}
             <Route path="contact" element={<Contact/>}/>
             <Route path="gallery" element={<Gallery/>}/>
         </Routes>

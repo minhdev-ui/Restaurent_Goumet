@@ -1,9 +1,44 @@
+
+import {FaMapSigns, FaPhoneVolume} from 'react-icons/fa'
+import {AiOutlineMail} from 'react-icons/ai'
+
 const Contact = () => {
     return (
         <div>
-            <p className="text-lg text-black">
-                Contact
-            </p>
+            <div className="block relative overflow-hidden bg-black min-h-30vh">
+                <div className="bg-overlay-theme absolute bg-black w-full h-full bg-center opacity-20"></div>
+                <div className="container mx-auto relative p-3 text-center text-white flex flex-col justify-center min-h-30vh">
+                <h1 className="text-6xl tracking-4">Contact</h1>
+                <p className="pt-2">Contact us via mobile, email or use our online form.</p>
+                </div>
+            </div>
+            <div className="py-12 px-5">
+                <div className="w-2/3 mx-auto">
+                    <div className="text-center">
+                        <h1 className="uppercase tracking-5 text-40p">contact us</h1>
+                    </div>
+                    <div className='flex justify-around z-10'>
+                        <div className='py-12 px-7 m-5 border-y-hoverBtn border-y-2 text-center w-1/3 leading-loose flex flex-col justify-between'>
+                            <div className='text-5xl flex justify-center text-hoverBtn'>
+                                <FaMapSigns/>
+                            </div>
+                            <span className='block'>Street Name, FL 54785</span>
+                        </div>
+                        <div className='py-12 px-7 m-5 border-y-hoverBtn border-y-2 text-center w-1/3 leading-loose flex flex-col justify-between'>
+                            <div className='text-5xl flex justify-center text-hoverBtn'>
+                                <FaPhoneVolume/>
+                            </div>
+                            <span className='block'>621-254-2147-973</span>
+                        </div>
+                        <div className='py-12 px-7 m-5 border-y-hoverBtn border-y-2 text-center w-1/3 leading-loose flex flex-col justify-between'>
+                            <div className='text-5xl flex justify-center text-hoverBtn'>
+                                <AiOutlineMail/>
+                            </div>
+                            <span className='block'>youremail@ipsum.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

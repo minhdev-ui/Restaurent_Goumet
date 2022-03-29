@@ -93,20 +93,6 @@
   ],
   "users": [
     {
-      "id": 1,
-      "username": "admin",
-      "password": "admin",
-      "name": "Do Ngoc Minh",
-      "email": "john@example.com"
-    },
-    {
-      "id": 2,
-      "username": "admin",
-      "password": "admin",
-      "name": "Ngo Thi Hong Nhung",
-      "email": "john@example.com"
-    },
-    {
       "id": 3,
       "username": "admin",
       "password": "admin",
@@ -119,6 +105,13 @@
       "email": "dominh162002@gmail.com",
       "password": "minh",
       "id": 4
+    },
+    {
+      "name": "Ngo Thi Hong Nhung",
+      "username": "admin",
+      "email": "nhung190402@gmail.com",
+      "password": "admin",
+      "id": 5
     }
   ]
 }
