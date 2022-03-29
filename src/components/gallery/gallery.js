@@ -75,7 +75,20 @@ function Gallery(){
                         </div>
                         <div className='flex justify-between'>
                             <div className='w-1/2 p-3'>
-                                <img className='w-full' src={require('./images/anh2.jpg')}/>
+                                 <Slider {...settings}>
+                                    <div>
+                                        <img alt='' src={require('./images/anh2.jpg')}/>
+                                    </div>
+                                    <div>
+                                        <img alt='' src={require('./images/anh2.1.jpg')}/>
+                                    </div>
+                                    <div>
+                                        <img alt='' src={require('./images/anh2.2.jpg')}/>
+                                    </div>
+                                    <div>
+                                        <img alt='' src={require('./images/anh2.3.jpg')}/>
+                                    </div>
+                                </Slider>
                             </div>
                             <div className='w-1/2 p-5 flex flex-col justify-center'>
                                 <h2 className='text-3xl'>Our Garden</h2>
@@ -88,7 +101,23 @@ function Gallery(){
                         </div>
                         <div className='flex justify-between'>
                             <div className='w-1/2 p-3'>
-                                <img className='w-full' src={require('./images/anh3.jpg')}/>
+                                <Slider {...settings}>
+                                    <div>
+                                        <img alt='' src={require('./images/anh3.jpg')}/>
+                                    </div>
+                                    <div>
+                                        <img alt='' src={require('./images/anh3.1.jpg')}/>
+                                    </div>
+                                    <div>
+                                        <img alt='' src={require('./images/anh3.2.jpg')}/>
+                                    </div>
+                                    <div>
+                                        <img alt='' src={require('./images/anh3.3.jpg')}/>
+                                    </div>
+                                    <div>
+                                        <img alt='' src={require('./images/anh3.4.jpg')}/>
+                                    </div>
+                                </Slider>
                             </div>
                             <div className='w-1/2 p-5 flex flex-col justify-center'>
                                 <h2 className='text-3xl'>Events</h2>
