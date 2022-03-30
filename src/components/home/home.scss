@@ -47,17 +47,32 @@
 }
 
 .btn {
+    position: relative;
     padding: 20px 60px;
     border: none;
-    background-color: red;
+    background-color: black;
     color: #fff;
     font-size: 18px;
     text-align: center;
     line-height: 18px;
     transition: 0.5s;
-    &:hover {
-        cursor: pointer;
+    border: 1px solid red;
+    cursor: pointer;
+    overflow: hidden;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
         background-color: #dd000a;
+        border-radius: 50%;
+        transition: width 0.5s, height 0.5s;
+    }
+    &:hover::before {
+        width: 300px;
+        height: 300px;
     }
 }
 
