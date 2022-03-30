@@ -3,7 +3,6 @@ import "./home.scss";
 import restaurantInterior from "../../images/restaurant-interior.jpg";
 import menuFood from "./menuFood";
 import Carousel from "./carousel";
-import Footer from "../footer/footer";
 const Home = () => {
   return (
     <div className="block">
@@ -20,7 +19,7 @@ const Home = () => {
           </p>
           <div className="bannerInner_btn p-4">
             <Link to="/menu">
-              <button className="btn">Click here</button>
+              <button className="btn"><span className = 'z-10 relative hoverBtn'>Click here</span></button>
             </Link>
           </div>
         </div>
@@ -40,7 +39,7 @@ const Home = () => {
         </div>
         <div className="menuBtn">
           <Link to="/menu" className="btnAnimation">
-            <button className="btn">See all Menu</button>
+            <button className="btn"><span className = 'z-10 relative hoverBtn'>See all Menu</span></button>
           </Link>
         </div>
       </div>
@@ -60,7 +59,7 @@ const Home = () => {
             <div className="contactBtn">
               <Link to="/contact">
                 <button className="btn btnAnimation">
-                  <i class="fa-solid fa-phone"></i> Contact Us
+                  <span className = 'z-10 relative hoverBtn'><i class="fa-solid fa-phone"></i>Contact Us</span>
                 </button>
               </Link>
             </div>
