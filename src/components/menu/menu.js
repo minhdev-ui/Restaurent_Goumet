@@ -11,6 +11,7 @@ const Menu = () => {
     .then(data => setMenus(data))
   }
   useEffect(() => {
+    window.scrollTo(0,0)
     getMenus(url)
   }, [])
   return (
