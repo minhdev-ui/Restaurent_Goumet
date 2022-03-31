@@ -100,18 +100,18 @@
       "email": "john@example.com"
     },
     {
-      "name": "Do Minh",
-      "username": "dominh",
-      "email": "dominh162002@gmail.com",
-      "password": "minh",
-      "id": 4
-    },
-    {
       "name": "Ngo Thi Hong Nhung",
       "username": "admin",
       "email": "nhung190402@gmail.com",
       "password": "admin",
       "id": 5
+    },
+    {
+      "name": "Do ngoc minh",
+      "username": "minh",
+      "email": "minhdo162002@gmail.com",
+      "password": "123",
+      "id": 6
     }
   ]
 }

@@ -1,0 +1,9 @@
+.input:focus ~ label, .input:valid ~ label {
+    transform: translateX(-10px) translateY(-30px);
+    font-size: 14px;
+    color: black;
+}
+
+label {
+    pointer-events: none;
+}

@@ -3,6 +3,7 @@ import { LockClosedIcon } from "@heroicons/react/solid";
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import JSON_API from './Constant';
+import './admin.scss'
 const AdminLogin = () => {
     const url = `${JSON_API}/users`
     const navigate = useNavigate()
@@ -45,35 +46,33 @@ const AdminLogin = () => {
         <form className="mt-8 space-y-6" action="#" method="POST">
           <input type="hidden" name="remember" defaultValue="true" />
           <div className="rounded-md shadow-sm -space-y-px">
-            <div>
-              <label htmlFor="email-address" className="sr-only">
-                Username
-              </label>
+            <div className='relative h-16'>
               <input
                 id="username"
                 name="username"
                 type="text"
                 autoComplete="username"
                 required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                placeholder="Username"
+                className="appearance-none input absolute block w-full px-3 py-2 border border-gray-300 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 onChange={(e) => setUsername(e.target.value)}
               />
-            </div>
-            <div>
-              <label htmlFor="password" className="sr-only">
-                Password
+              <label htmlFor="username" className='absolute top-0 left-0 py-2 px-3 inline-block text-gray-500 duration-300'>
+                Username
               </label>
+            </div>
+            <div className='relative h-10'>
               <input
                 id="password"
                 name="password"
                 type="password"
                 autoComplete="current-password"
                 required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                placeholder="Password"
+                className="appearance-none input absolute bg-transparent block w-full px-3 py-2 border border-gray-300 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 onChange={(e) => setPassword(e.target.value)}
               />
+              <label htmlFor="password" className='absolute top-0 left-0 py-2 px-3 inline-block text-gray-500 duration-300'>
+                Password
+              </label>
             </div>
           </div>
           <div className="flex items-center justify-between">
@@ -113,7 +112,7 @@ const AdminLogin = () => {
                   aria-hidden="true"
                 />
               </span>
-              Sign in
+              Log In
             </button>
           </div>
         </form>
