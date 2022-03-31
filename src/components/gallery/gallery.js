@@ -90,8 +90,8 @@ function Gallery(){
                                     </div>
                                 </Slider>
                             </div>
-                            <div className='w-1/2 p-5 flex flex-col justify-center'>
-                                <h2 className='text-3xl'>Our Garden</h2>
+                            <div className='w-1/2 p-5 flex flex-col justify-center laptop:max-w-1/2 text-justify laptop:text-left'>
+                                <h2 className='text-3xl text-center laptop:text-left'>Our Garden</h2>
                                 <p className='leading-relaxed text-gray-800'>Augue neque gravida in fermentum. Ornare suspendisse sed nisi lacus sed viverra tellus in. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Montes nascetur ridiculus mus mauris vitae ultricies. Turpis massa tincidunt dui ut ornare lectus. Et tortor consequat id porta nibh. </p>
                                 <p className='leading-relaxed text-gray-800'>Vitae et leo duis ut diam quam nulla porttitor massa. Cursus mattis molestie a iaculis at erat pellentesque. Id faucibus nisl tincidunt eget. Cras sed felis eget velit aliquet sagittis id consectetur purus.</p>
                             </div>
@@ -119,8 +119,8 @@ function Gallery(){
                                     </div>
                                 </Slider>
                             </div>
-                            <div className='w-1/2 p-5 flex flex-col justify-center'>
-                                <h2 className='text-3xl'>Events</h2>
+                            <div className='w-1/2 p-5 flex flex-col justify-center laptop:max-w-1/2 text-justify laptop:text-left'>
+                                <h2 className='text-3xl text-center laptop:text-left'>Events</h2>
                                 <p className='leading-relaxed text-gray-800'>Augue neque gravida in fermentum. Ornare suspendisse sed nisi lacus sed viverra tellus in. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Montes nascetur ridiculus mus mauris vitae ultricies. Turpis massa tincidunt dui ut ornare lectus. Et tortor consequat id porta nibh. </p>
                                 <p className='leading-relaxed text-gray-800'>Vitae et leo duis ut diam quam nulla porttitor massa. Cursus mattis molestie a iaculis at erat pellentesque. Id faucibus nisl tincidunt eget. Cras sed felis eget velit aliquet sagittis id consectetur purus.</p>
                             </div>
