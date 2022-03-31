@@ -112,7 +112,7 @@ const AdminLogin = () => {
                   aria-hidden="true"
                 />
               </span>
-              Sign in
+              Log In
             </button>
           </div>
         </form>

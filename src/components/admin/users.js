@@ -18,13 +18,13 @@ const Users = () => {
   return (
     <div className="container mx-auto py-6">
       {data.map((item, index) => (
-        <div className="flex justify-around w-full border" key={index}>
+        <div className="flex justify-around w-full border py-3" key={index}>
           <p className="w-1/3 text-center border-r py-2">{item.name}</p>
           <p className="w-1/3 text-center border-r py-2">{item.email}</p>
           <div className="flex w-1/3 justify-center">
-            <button className="p-2 mr-3 bg-black text-white text-center rounded-full shadow-lg hover:bg-red-600 duration-300">edit</button>
+            <button className="py-1 px-3 mr-3 text-white text-center rounded-md hover:shadow-lg bg-yellow-300 duration-300"><i class="fa-solid fa-pen-to-square"></i></button>
             <button
-              className="p-2 bg-black text-white text-center rounded-full shadow-lg hover:bg-red-600 duration-300"
+              className="py-1 px-3 text-white text-center rounded-md hover:shadow-lg bg-red-700 duration-300"
               onClick={() => {
                 fetch(url + "/" + item.id, {
                 method: "DELETE",
@@ -37,14 +37,14 @@ const Users = () => {
                 }
             }
             >
-              remove
+              <i class="fa-solid fa-trash-can"></i>
             </button>
           </div>
         </div>
       ))}
       <div className="block mt-3">
         <Link to="./addUser">
-          <button className="float-right p-2 bg-black text-white rounded-md shadow-lg hover:bg-red-600 duration-300">Add User</button>
+          <button className="py-1 px-3 float-right p-2 bg-black text-white rounded-md shadow-lg hover:bg-red-600 duration-300"><i class="fa-solid fa-plus"></i></button>
         </Link>
       </div>
     </div>
