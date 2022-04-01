@@ -22,7 +22,8 @@ module.exports = {
       },
       spacing: {
         '30%': '30%',
-        '2px': '2px'
+        '2px': '2px',
+        'screen': '100vh'
       },
       minWidth: {
         '1/2': '50%',

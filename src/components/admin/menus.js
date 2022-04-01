@@ -10,12 +10,12 @@ const Menus = () => {
           .then((data) => setMenu(data));
         return responsive;
       }
-     
+
     useEffect (function(){
         getMenu(url)
     },[])
     return (
-        <div className="container px-5 py-12 mx-auto"> 
+        <div className="container px-5 py-12 mx-auto">
             {menu.map(function(item){
                 return(
                     <div className="border border-red-700 mb-5 p-5">
@@ -41,7 +41,7 @@ const Menus = () => {
                                 )
                             })}
                         </div>
-                    </div>    
+                    </div>
                 )
             })}
         </div>
