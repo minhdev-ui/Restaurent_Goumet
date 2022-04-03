@@ -9,14 +9,15 @@ const Users = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [indexEdit, setIndexEdit] = useState(null)
-  async function getUser(url) {
-    const responsive = await fetch(url)
+  function getUser(url) {
+    const responsive = fetch(url)
       .then((res) => res.json())
-      .then((data) => setData(data))
+      .then((data) => setData((prevState) => [...data]))
     return responsive
   }
   useEffect(() => {
     getUser(url)
+    console.log(data);
   }, [edit])
   return (
     <div className="container mx-auto py-6">
@@ -44,6 +45,7 @@ const Users = () => {
               })
               .then(res => res.json())
               .then(data => console.log(data))
+              alert("Update success")
               setEdit(false)
             }}
           >

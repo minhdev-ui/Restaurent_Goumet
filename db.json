@@ -1,108 +1,116 @@
 {
   "Menus": [
     {
-      "name": "salads",
-      "menus": [
-        {
-          "name": "Porta nibh venenatis",
-          "weight": "300g",
-          "price": "14"
-        },
-        {
-          "name": "In dictum non consectetur",
-          "weight": "400g",
-          "price": "17"
-        },
-        {
-          "name": "Pharetra diam sit amet nisl suscipit",
-          "weight": "250g",
-          "price": "19"
-        },
-        {
-          "name": "Nauris in aliquam",
-          "weight": "300g",
-          "price": "14"
-        }
-      ]
+      "id": 1,
+      "name": "Porta nibh venenatis",
+      "weight": "300g",
+      "price": "14",
+      "category": "salads"
     },
     {
-      "name": "main dishes",
-      "menus": [
-        {
-          "name": "Nibh venenatis cras sed felis eget velit",
-          "weight": "300g",
-          "price": "38"
-        },
-        {
-          "name": "Porta nibh venenatis cras sed felis eget velit",
-          "weight": "300g",
-          "price": "27"
-        },
-        {
-          "name": "Pharetra diam sit amet nisl suscipit",
-          "weight": "300g",
-          "price": "21"
-        }
-      ]
+      "id": 2,
+      "name": "In dictum non consectetur",
+      "weight": "400g",
+      "price": "17",
+      "category": "salads"
     },
     {
-      "name": "pasta",
-      "menus": [
-        {
-          "name": "Venenatis cras sed felis eget velit",
-          "weight": "300g",
-          "price": "30"
-        },
-        {
-          "name": "Egestas erat imperdiet sed",
-          "weight": "200g",
-          "price": "20"
-        },
-        {
-          "name": "Pharetra diam sit amet nisl suscipit",
-          "weight": "250g",
-          "price": "27"
-        },
-        {
-          "name": "Nauris in aliquam sem ullamcorper morb",
-          "weight": "300g",
-          "price": "29"
-        }
-      ]
+      "id": 3,
+      "name": "Pharetra diam sit amet nisl suscipit",
+      "weight": "250g",
+      "price": "19",
+      "category": "salads"
     },
     {
-      "name": "desserts",
-      "menus": [
-        {
-          "name": "Imperdiet sed euismod",
-          "weight": "400g",
-          "price": "25"
-        },
-        {
-          "name": "Consectetur a era",
-          "weight": "200g",
-          "price": "15"
-        },
-        {
-          "name": "Nauris in aliquam",
-          "weight": "300g",
-          "price": "12"
-        }
-      ]
+      "id": 4,
+      "name": "Nauris in aliquam",
+      "weight": "300g",
+      "price": "14",
+      "category": "salads"
+    },
+    {
+      "id": 5,
+      "name": "Nibh venenatis cras sed felis eget velit",
+      "weight": "300g",
+      "price": "38",
+      "category": "main dishes"
+    },
+    {
+      "id": 6,
+      "name": "Porta nibh venenatis cras sed felis eget velit",
+      "weight": "300g",
+      "price": "27",
+      "category": "main dishes"
+    },
+    {
+      "id": 7,
+      "name": "Pharetra diam sit amet nisl suscipit",
+      "weight": "300g",
+      "price": "21",
+      "category": "main dishes"
+    },
+    {
+      "id": 8,
+      "name": "Venenatis cras sed felis eget velit",
+      "weight": "300g",
+      "price": "30",
+      "category": "pasta"
+    },
+    {
+      "id": 9,
+      "name": "Egestas erat imperdiet sed",
+      "weight": "200g",
+      "price": "20",
+      "category": "pasta"
+    },
+    {
+      "id": 10,
+      "name": "Pharetra diam sit amet nisl suscipit",
+      "weight": "250g",
+      "price": "27",
+      "category": "pasta"
+    },
+    {
+      "id": 11,
+      "name": "Nauris in aliquam sem ullamcorper morb",
+      "weight": "300g",
+      "price": "29",
+      "category": "pasta"
+    },
+    {
+      "id": 12,
+      "name": "Imperdiet sed euismod",
+      "weight": "400g",
+      "price": "25",
+      "category": "desserts"
+    },
+    {
+      "id": 13,
+      "name": "Consectetur a era",
+      "weight": "200g",
+      "price": "15",
+      "category": "desserts"
+    },
+    {
+      "id": 14,
+      "name": "Nauris in aliquam",
+      "weight": "300g",
+      "price": "12",
+      "category": "desserts"
     }
   ],
   "users": [
     {
       "name": "Ngo Thi Hong Nhung",
       "username": "admin",
-      "email": "nhung190402@gmail.com",
+      "email": "nhung19040202@gmail.com",
       "password": "admin",
       "id": 5
     },
     {
       "name": "Do ngoc minh",
       "username": "minh",
-      "email": "minhdo162002@gmail.com",
+      "email": "minhdo1620@gmail.com",
       "password": "123",
       "id": 6
     },
@@ -116,7 +124,7 @@
     {
       "name": "Nguyen Khanh Linh",
       "username": "admin",
-      "email": "linh@yahoo.com",
+      "email": "2051060609@e.tlu.edu.vn",
       "password": "admin",
       "id": 8
     },
@@ -130,11 +138,20 @@
   ],
   "books": [
     {
-      "name": "Do Ngoc Minh",
-      "people": "3",
-      "date": "2022-04-08",
-      "time": "20:00",
-      "id": 1
+      "name": "Ngô Thị Hồng Nhung",
+      "people": "10",
+      "date": "2022-04-23",
+      "time": "20:15",
+      "id": 1,
+      "accept": true
+    },
+    {
+      "name": "Đỗ Ngọc Minh",
+      "people": "5",
+      "date": "2022-04-23",
+      "time": "20:15",
+      "id": 2,
+      "accept": true
     }
   ]
 }
