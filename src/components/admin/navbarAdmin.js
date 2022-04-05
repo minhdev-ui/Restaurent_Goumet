@@ -20,6 +20,7 @@ const navigation = [
   { name: "Users", href: "/admin/adminPage/users", current: true },
   { name: "Menus", href: "/admin/adminPage/menus", current: false },
   { name: "Chefs", href: "/admin/adminPage/chefs", current: false },
+  { name: "Orders", href: "/admin/adminPage/orders", current: false},
 ];
 
 function classNames(...classes) {

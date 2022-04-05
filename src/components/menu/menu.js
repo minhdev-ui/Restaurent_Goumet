@@ -5,16 +5,24 @@ import JSON_API from "../admin/Constant";
 const Menu = () => {
   const url = `${JSON_API}/Menus`;
   const [menus, setMenus] = useState([])
+  const [category, setCategory] = useState([])
+  const [loading, setLoading] = useState(false)
   async function getMenus(url){
-    await fetch(url)
+    const responsive = await fetch(url, {
+      method: "GET"
+    })
     .then(res => res.json())
     .then(data => setMenus(data))
+    .then(() => setCategory([...new Set(menus.map(item => item.category))]))
+    .then(() => setLoading(true))
+    return responsive
   }
   useEffect(() => {
     window.scrollTo(0,0)
     getMenus(url)
-  }, [])
-  return (
+    console.log('mounted')
+  }, [loading])
+  return loading && (
     <div>
       <div className="block relative overflow-hidden bg-black min-h-30vh">
         <div className="absolute bg-black w-full h-full bg-center"></div>
@@ -30,16 +38,18 @@ const Menu = () => {
           <h1 className="uppercase text-5xl laptop:tracking-5">our menu</h1>
         </div>
         <div>
-          {menus.map((menu, index) => (
+          {category.map((cate, index) => (
               <div className="pt-24" key={index}>
               <h2 className="text-3xl text-center laptop:text-left uppercase border-b border-red-600">
-                {menu.name}
+                {cate}
               </h2>
-              {menu.menus.map((item, index) => (
+              {menus
+              .filter((menu) => menu.category === cate)
+              .map((menu, index) => (
                 <div className="flex p-1 text-gray-500 text-lg border-b border-gray-300 laptop:justify-between justify-evenly" key={index}>
-                  <p className="pl-6 w-1/2">{item.name}</p>
-                  <p>{item.weight}</p>
-                  <p>$ {item.price}</p>
+                  <p className="pl-6 w-1/2">{menu.name}</p>
+                  <p>{menu.weight}</p>
+                  <p>$ {menu.price}</p>
                 </div>
               ))}
             </div>
