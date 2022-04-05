@@ -1,4 +1,4 @@
-import { Menu } from "@headlessui/react";
+// import { Menu } from "@headlessui/react";
 import {useEffect, useState} from "react";
 import JSON_API from "./Constant";
 const Menus = () => {
@@ -26,16 +26,26 @@ const Menus = () => {
                             {item.menus.map(function(menu){
                                 return (
                                     <div className="flex justify-between py-2">
+                                        <div className="w-5/6 flex justify-between ">
                                         <p>
                                             {menu.name}
                                         </p>
-                                        <div className="w-1/2 flex justify-around">
+                                        <div className="w-1/3 flex justify-around">
                                         <p>
                                             {menu.weight}
                                         </p>
                                         <p>
                                             {menu.price}
                                         </p>
+                                        </div>
+                                        </div>
+                                        <div className="w-1/6 flex justify-center ">
+                                            <button className="px-3">
+                                                <i class="fa-solid fa-pen-to-square"></i>
+                                            </button>
+                                            <button className="px-3">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
                                         </div>
                                     </div>
                                 )
