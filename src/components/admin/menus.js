@@ -1,4 +1,4 @@
-import { Menu } from "@headlessui/react";
+// import { Menu } from "@headlessui/react";
 import {useEffect, useState} from "react";
 import JSON_API from "./Constant";
 const Menus = () => {
@@ -19,22 +19,24 @@ const Menus = () => {
                 return(
                     <div className="border border-red-700 mb-5 p-5">
                         <div>
-                            <div className="flex justify-between py-2">
-                                <p>
-                                    {item.name}
-                                </p>
-                                <div className="w-1/2 flex justify-around">
-                                <p>
-                                    {item.weight}
-                                </p>
-                                <p>
-                                    {item.price}
-                                </p>
-                                <p>
-                                    {item.category}
-                                </p>
-                                </div>
-                            </div>
+                            {item.menus.map(function(menu){
+                                return (
+                                  <div className="flex justify-between py-2">
+                                      <p>
+                                          {item.name}
+                                      </p>
+                                      <div className="w-1/2 flex justify-around">
+                                      <p>
+                                          {item.weight}
+                                      </p>
+                                      <p>
+                                          {item.price}
+                                      </p>
+                                      <p>
+                                          {item.category}
+                                      </p>
+                                      </div>
+                                  </div>
                         </div>
                     </div>
                 )
