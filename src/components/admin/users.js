@@ -18,7 +18,7 @@ const Users = () => {
   useEffect(() => {
     getUser(url)
     console.log(data);
-  }, [edit])
+  }, [])
   return (
     <div className="container mx-auto py-6">
       <div className={edit ? "container mx-auto w-1/3 flex flex-col mb-4" : "hidden"}>
@@ -45,6 +45,7 @@ const Users = () => {
               })
               .then(res => res.json())
               .then(data => console.log(data))
+              .then(() => getUser(url))
               alert("Update success")
               setEdit(false)
             }}
@@ -88,7 +89,7 @@ const Users = () => {
               })
                 .then((res) => res.json())
                 .then(() => {
-                    alert('Xóa Thành Công')
+                    alert('Delete Success')
                     getUser(url)
                 })
                 }

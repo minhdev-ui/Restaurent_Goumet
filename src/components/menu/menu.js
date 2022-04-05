@@ -6,21 +6,23 @@ const Menu = () => {
   const url = `${JSON_API}/Menus`;
   const [menus, setMenus] = useState([])
   const [category, setCategory] = useState([])
+  const [loading, setLoading] = useState(false)
   async function getMenus(url){
-    await fetch(url)
+    const responsive = await fetch(url, {
+      method: "GET"
+    })
     .then(res => res.json())
     .then(data => setMenus(data))
+    .then(() => setCategory([...new Set(menus.map(item => item.category))]))
+    .then(() => setLoading(true))
+    return responsive
   }
   useEffect(() => {
     window.scrollTo(0,0)
     getMenus(url)
-    getCategory()
-  }, [])
-  const getCategory = () => {
-    const array = menus.map(item => item.category)
-    setCategory([...new Set(array)])
-  }
-  return (
+    console.log('mounted')
+  }, [loading])
+  return loading && (
     <div>
       <div className="block relative overflow-hidden bg-black min-h-30vh">
         <div className="absolute bg-black w-full h-full bg-center"></div>

@@ -19,9 +19,9 @@ export default function Order() {
   return (
     <div className='container mx-auto py-10'>
       <div className='flex flex-wrap'>
-        {data.map((item) => (
+        {data.map((item, index) => (
           <div className='bg-gray-600 relative text-white px-3 mr-10 w-1/5 py-2 rounded' key={item.id}>
-            <div className='absolute -top-3 -left-3 bg-red-600 w-7 h-7 rounded-full text-center'>{item.id}</div>
+            <div className='absolute -top-3 -left-3 bg-red-600 w-7 h-7 rounded-full text-center'>{index + 1}</div>
             <div className='px-1 py-2'>
               <label>Name: </label>
               <span>{item.name}</span>
@@ -40,7 +40,7 @@ export default function Order() {
             </div>
             <div className='px-1 py-2'>
               <label>Total: </label>
-              <span>{(item.people * 100000).toLocaleString('it-IT', {style: 'currency', currency: 'VND'})}</span>
+              <span>{item.total.toLocaleString('it-IT', {style: 'currency', currency: 'VND'})}</span>
             </div>
             <div>
               <button className={item.accept ? 'hidden' : 'py-1 px-2 bg-green-500 hover:bg-green-600 duration-300 rounded mr-2'} onClick={() => {

@@ -8,12 +8,6 @@ export default function Booking() {
   const [date, setDate] = useState(null);
   const [time, setTime] = useState(null);
   const [name, setName] = useState("");
-  const reset = () => {
-    setPeople(0)
-    setDate(null)
-    setTime(null)
-    setName(null)
-  }
   async function postBooking(url = "", data = {}) {
     const response = await fetch(url, {
       method: "POST",
@@ -91,9 +85,9 @@ export default function Booking() {
                 date: date,
                 time: time,
                 accept: false,
+                total: people * 100000
               });
               setShowBooking(!showBooking);
-              reset();
               alert("Booking Succeed");
             }}
           >
