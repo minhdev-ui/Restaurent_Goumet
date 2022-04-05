@@ -1,16 +1,9 @@
 {
   "Menus": [
     {
-      "id": 1,
-      "name": "Porta nibh venenatis",
-      "weight": "300g",
-      "price": "14",
-      "category": "salads"
-    },
-    {
       "id": 2,
       "name": "In dictum non consectetur",
-      "weight": "400g",
+      "weight": "300g",
       "price": "17",
       "category": "salads"
     },
@@ -134,6 +127,8 @@
       "email": "minhdo162002@gmail.com",
       "password": "admin",
       "id": 9
+<<<<<<< HEAD
+=======
     },
     {
       "name": "Ngo Thi Hong Nhung",
@@ -141,6 +136,7 @@
       "email": "nhung160802@gmail.com",
       "password": "admin",
       "id": 10
+>>>>>>> 097ebbb958d52e347e356bef585898c0de1c4e85
     }
   ],
   "books": []

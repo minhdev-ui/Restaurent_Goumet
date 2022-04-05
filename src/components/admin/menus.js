@@ -62,21 +62,12 @@ const Menus = () => {
         <div className="block">
           <button className="py-1 px-3 mr-3 text-white text-center rounded-md hover:shadow-lg bg-yellow-300 duration-300"
             onClick={() => {
-              fetch(url , {
-                method: "POST",
-                body: JSON.stringify({
-                  name: name,
-                  weight: weight,
-                  price: price,
-                  category: category
-                }),
-                headers: {
-                  'Content-type': 'application/json; charset=UTF-8',
-                },
+              postData(url, {
+                name: name,
+                weight: weight,
+                price: price,
+                category: category
               })
-              .then(res => res.json())
-              .then(data => console.log(data))
-              .then(() => getMenu(url))
               alert("Add success")
               setAdd(false)
             }}
@@ -194,7 +185,6 @@ const Menus = () => {
                     </div>
                 )})}
             </div>
-                
         </div>
     )
 }
