@@ -9,15 +9,16 @@ const Users = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [indexEdit, setIndexEdit] = useState(null)
-  async function getUser(url) {
-    const responsive = await fetch(url)
+  function getUser(url) {
+    const responsive = fetch(url)
       .then((res) => res.json())
-      .then((data) => setData(data))
+      .then((data) => setData((prevState) => [...data]))
     return responsive
   }
   useEffect(() => {
     getUser(url)
-  }, [edit])
+    console.log(data);
+  }, [])
   return (
     <div className="container mx-auto py-6">
       <div className={edit ? "container mx-auto w-1/3 flex flex-col mb-4" : "hidden"}>
@@ -44,6 +45,8 @@ const Users = () => {
               })
               .then(res => res.json())
               .then(data => console.log(data))
+              .then(() => getUser(url))
+              alert("Update success")
               setEdit(false)
             }}
           >
@@ -86,7 +89,7 @@ const Users = () => {
               })
                 .then((res) => res.json())
                 .then(() => {
-                    alert('Xóa Thành Công')
+                    alert('Delete Success')
                     getUser(url)
                 })
                 }

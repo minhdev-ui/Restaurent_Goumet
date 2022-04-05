@@ -19,6 +19,7 @@ import Chefs from './components/admin/chefs'
 import NavbarAdmin from './components/admin/navbarAdmin'
 import Gallery from "./components/gallery/gallery";
 import AddUser from "./components/admin/addUser";
+import Order from './components/admin/order';
 function App() {
   let location = useLocation();
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path="/admin/adminPage/users/addUser" element={<AddUser/>}/>
             <Route path="/admin/adminPage/menus" element={<Menus/>}/>
             <Route path="/admin/adminPage/chefs" element={<Chefs/>}/>
+            <Route path="/admin/adminPage/orders" element={<Order/>}/>
             <Route path="/" element={<Home/>}/>
             <Route path="about" element={<About/>}/>
             <Route path="menu" element={<Menu/>}/>

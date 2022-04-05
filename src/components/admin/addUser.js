@@ -30,7 +30,7 @@ const AddUser = () => {
             password: password
         }
         postData('http://localhost:5000/users', obj)
-        navigate('../admin/adminPage/users', {replace: true})
+        navigate('../admin/adminPage/users')
     }
     return (
         <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
