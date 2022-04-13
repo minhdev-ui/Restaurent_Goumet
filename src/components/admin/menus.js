@@ -132,7 +132,22 @@ const Menus = () => {
 
                     </button>
                 </div>
-        <div>
+        <div className="p-5 border rounded">
+          <div className="mb-5 p-5 border-b">
+            <div className="flex justify-between py-2">
+              <div className="w-1/2">
+                <p>Food Name</p>
+              </div>
+              <div className="w-2/6 flex justify-between">
+                <p>Weight</p>
+                <p>Price</p>
+                <p className="w-1/3 text-center">Category</p>
+              </div>
+              <div className="w-1/6 text-lg flex justify-center">
+                <p>Action</p>
+              </div>
+            </div>
+          </div>
             {menu.map(function(item){
                 return(
                     <div className="border border-red-700 mb-5 p-5">

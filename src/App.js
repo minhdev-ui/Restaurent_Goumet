@@ -20,6 +20,7 @@ import NavbarAdmin from './components/admin/navbarAdmin'
 import Gallery from "./components/gallery/gallery";
 import AddUser from "./components/admin/addUser";
 import Order from './components/admin/order';
+import Total from "./components/admin/total";
 function App() {
   let location = useLocation();
   return (
@@ -35,6 +36,7 @@ function App() {
             <Route path="/admin/adminPage/menus" element={<Menus/>}/>
             <Route path="/admin/adminPage/chefs" element={<Chefs/>}/>
             <Route path="/admin/adminPage/orders" element={<Order/>}/>
+            <Route path="/admin/adminPage/total" element={<Total/>}/>
             <Route path="/" element={<Home/>}/>
             <Route path="about" element={<About/>}/>
             <Route path="menu" element={<Menu/>}/>

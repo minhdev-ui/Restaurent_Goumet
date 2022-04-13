@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import JSON_API from "./Constant"
 const AddUser = () => {
+    const url = `${JSON_API}/users`
     const [fullName, setFullName] = useState('')
     const [username, setUsername] = useState('')
     const [email, setEmail] = useState('')
@@ -29,7 +31,7 @@ const AddUser = () => {
             email: email,
             password: password
         }
-        postData('http://localhost:5000/users', obj)
+        postData(url, obj)
         navigate('../admin/adminPage/users')
     }
     return (

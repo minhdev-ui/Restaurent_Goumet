@@ -21,6 +21,7 @@ const navigation = [
   { name: "Menus", href: "/admin/adminPage/menus", current: false },
   { name: "Chefs", href: "/admin/adminPage/chefs", current: false },
   { name: "Orders", href: "/admin/adminPage/orders", current: false},
+  { name: "Total", href: "/admin/adminPage/total", current: false},
 ];
 
 function classNames(...classes) {

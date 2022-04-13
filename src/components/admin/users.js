@@ -92,6 +92,7 @@ const Users = () => {
                     alert('Delete Success')
                     getUser(url)
                 })
+                .catch(err => console.log(err))
                 }
             }
             >

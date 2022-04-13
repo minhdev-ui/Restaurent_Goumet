@@ -1,2 +1,2 @@
-const JSON_API = 'https://my-json-server.typicode.com/minhdev-ui/Restaurent_Goumet'
+const JSON_API = 'http://localhost:5000'
 export default JSON_API

@@ -85,7 +85,7 @@ export default function Booking() {
                 date: date,
                 time: time,
                 accept: false,
-                total: people * 100000
+                total: people * 5
               });
               setShowBooking(!showBooking);
               alert("Booking Succeed");

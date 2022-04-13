@@ -90,6 +90,13 @@
       "weight": "300g",
       "price": "12",
       "category": "desserts"
+    },
+    {
+      "name": "Pizza",
+      "weight": "600g",
+      "price": "20",
+      "category": "Pizza",
+      "id": 15
     }
   ],
   "users": [
@@ -108,36 +115,100 @@
       "id": 6
     },
     {
-      "name": "Nguyen Huy Manh",
+      "name": "Đỗ Ngọc Minh",
       "username": "admin",
-      "email": "manh@gmail.com",
+      "email": "minhdo16082002@gmail.com",
       "password": "admin",
-      "id": 7
+      "id": 9
     },
     {
       "name": "Nguyen Khanh Linh",
-      "username": "admin",
-      "email": "2051060609@e.tlu.edu.vn",
-      "password": "admin",
-      "id": 8
-    },
-    {
-      "name": "Đỗ Ngọc Minh",
-      "username": "admin",
-      "email": "minhdo162002@gmail.com",
-      "password": "admin",
-      "id": 9
-<<<<<<< HEAD
-=======
-    },
-    {
-      "name": "Ngo Thi Hong Nhung",
-      "username": "admin",
-      "email": "nhung160802@gmail.com",
-      "password": "admin",
+      "username": "asdasd",
+      "email": "dominh162002@gmail.com",
+      "password": "asdsad",
       "id": 10
->>>>>>> 097ebbb958d52e347e356bef585898c0de1c4e85
     }
   ],
-  "books": []
+  "books": [
+    {
+      "name": "Do ngoc minh",
+      "people": "3",
+      "date": "2022-04-14",
+      "time": "17:18",
+      "accept": true,
+      "total": 15,
+      "id": 1
+    },
+    {
+      "name": "dasjd",
+      "people": "4",
+      "date": "2022-04-14",
+      "time": "11:00",
+      "accept": true,
+      "total": 20,
+      "id": 2
+    }
+  ],
+  "total": [
+    {
+      "id": 1,
+      "month": "Jan",
+      "total": 3000
+    },
+    {
+      "id": 2,
+      "month": "Feb",
+      "total": 4000
+    },
+    {
+      "id": 3,
+      "month": "Mar",
+      "total": 3500
+    },
+    {
+      "id": 4,
+      "month": "Apr",
+      "total": 5000
+    },
+    {
+      "id": 5,
+      "month": "May",
+      "total": 2000
+    },
+    {
+      "id": 6,
+      "month": "Jun",
+      "total": 6000
+    },
+    {
+      "id": 7,
+      "month": "Jul",
+      "total": 5500
+    },
+    {
+      "id": 8,
+      "month": "Aug",
+      "total": 7000
+    },
+    {
+      "id": 9,
+      "month": "Sep",
+      "total": 3000
+    },
+    {
+      "id": 10,
+      "month": "Oct",
+      "total": 4000
+    },
+    {
+      "id": 11,
+      "month": "Nov",
+      "total": 6500
+    },
+    {
+      "id": 12,
+      "month": "Dec",
+      "total": 8000
+    }
+  ]
 }

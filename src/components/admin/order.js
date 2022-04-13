@@ -40,7 +40,7 @@ export default function Order() {
             </div>
             <div className='px-1 py-2'>
               <label>Total: </label>
-              <span>{item.total.toLocaleString('it-IT', {style: 'currency', currency: 'VND'})}</span>
+              <span>{item.total.toLocaleString('en-US', {style: 'currency', currency: 'USD'})}</span>
             </div>
             <div>
               <button className={item.accept ? 'hidden' : 'py-1 px-2 bg-green-500 hover:bg-green-600 duration-300 rounded mr-2'} onClick={() => {
