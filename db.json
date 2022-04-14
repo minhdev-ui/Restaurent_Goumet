@@ -210,5 +210,37 @@
       "month": "Dec",
       "total": 8000
     }
+  ],
+  "chefs": [
+    {
+      "id": 1,
+      "name": "Tom Hiddleston",
+      "age": 25,
+      "sex": "male",
+      "address": "London",
+      "role": "head-chef",
+      "phone": "3489674938",
+      "salary": 5000
+    },
+    {
+      "name": "Jason William",
+      "age": 35,
+      "sex": "Male",
+      "address": "Paris",
+      "role": "Cook",
+      "phone": "346979860",
+      "salary": 3000,
+      "id": 2
+    },
+    {
+      "name": "Jane",
+      "age": 30,
+      "sex": "Female",
+      "address": "Paris",
+      "role": "Cook",
+      "phone": "4752384985",
+      "salary": 3000,
+      "id": 3
+    }
   ]
 }
