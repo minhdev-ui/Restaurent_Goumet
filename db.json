@@ -97,6 +97,13 @@
       "price": "20",
       "category": "Pizza",
       "id": 15
+    },
+    {
+      "name": "Cheese Burger",
+      "weight": "200g",
+      "price": "10",
+      "category": "burger",
+      "id": 16
     }
   ],
   "users": [
