@@ -41,7 +41,7 @@ const Menus = () => {
         return response.json();
       }
     return (
-        <div className="container px-5 py-12 mx-auto">
+        <div className="container px-5 py-12 mx-auto font-sans">
             <div className={add ? "container mx-auto w-1/3 flex flex-col mb-4" : "hidden"}>
         <div>
           <label>Name</label>

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import ApexCharts from 'apexcharts'
+import {BiDollar} from 'react-icons/bi'
 import Chart from 'react-apexcharts'
-import {RiCupLine} from 'react-icons/ri'
+import {RiCupLine, RiFileListLine} from 'react-icons/ri'
+import { AiOutlineUsergroupDelete } from 'react-icons/ai'
 import JSON_API from './Constant'
+import CountUp from 'react-countup'
 export default function Total() {
     const url = `${JSON_API}/total`
     const [total, setTotal] = useState([])
@@ -49,38 +51,40 @@ export default function Total() {
         }
     }
   return (
-    <div>
+    <div className='font-sans'>
         <div className='flex justify-around pt-5 pb-10'>
-            <div className='p-6 flex rounded-md shadow-md'>
-                <span className='px-3 py-2 mr-4 rounded-full bg-blue-400 opacity-70'>
-                    <RiCupLine className='text-5xl text-blue-700'/>
+            <div className='p-6 flex rounded-md shadow-md justify-between items-center'>
+                <span className='px-4 py-4 mr-4 rounded-full bg-blue-400 opacity-70'>
+                    <RiCupLine className='text-5xl text-blue-800 leading-loose'/>
                 </span>
                 <div>
                     <h3 className='text-4xl'>56</h3>
                     <p className='uppercase'>total menus</p>
                 </div>
             </div>
-            <div className='p-6 flex rounded-md shadow-md'>
-                <span className='px-3 py-2 mr-4 rounded-full bg-blue-400 opacity-70'>
-                    <RiCupLine className='text-5xl text-blue-700'/>
+            <div className='p-6 flex rounded-md shadow-md justify-between items-center'>
+                <span className='px-4 py-4 mr-4 rounded-full bg-blue-400 opacity-70'>
+                    <BiDollar className='text-5xl text-blue-800 leading-loose'/>
+                </span>
+                <div>
+                    <h3 className='text-4xl'>
+                        <CountUp end={56} duration={2}/>
+                    </h3>
+                    <p className='uppercase'>total menus</p>
+                </div>
+            </div>
+            <div className='p-6 flex rounded-md shadow-md justify-between items-center'>
+                <span className='px-4 py-4 mr-4 rounded-full bg-blue-400 opacity-70'>
+                    <RiFileListLine className='text-5xl text-blue-800 leading-loose'/>
                 </span>
                 <div>
                     <h3 className='text-4xl'>56</h3>
                     <p className='uppercase'>total menus</p>
                 </div>
             </div>
-            <div className='p-6 flex rounded-md shadow-md'>
-                <span className='px-3 py-2 mr-4 rounded-full bg-blue-400 opacity-70'>
-                    <RiCupLine className='text-5xl text-blue-700'/>
-                </span>
-                <div>
-                    <h3 className='text-4xl'>56</h3>
-                    <p className='uppercase'>total menus</p>
-                </div>
-            </div>
-            <div className='p-6 flex rounded-md shadow-md'>
-                <span className='px-3 py-2 mr-4 rounded-full bg-blue-400 opacity-70'>
-                    <RiCupLine className='text-5xl text-blue-700'/>
+            <div className='p-6 flex rounded-md shadow-md justify-between items-center'>
+                <span className='px-4 py-4 mr-4 rounded-full bg-blue-400 opacity-70'>
+                    <AiOutlineUsergroupDelete className='text-5xl text-blue-700'/>
                 </span>
                 <div>
                     <h3 className='text-4xl'>56</h3>
