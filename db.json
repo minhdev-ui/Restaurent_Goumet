@@ -145,15 +145,6 @@
       "accept": true,
       "total": 15,
       "id": 1
-    },
-    {
-      "name": "dasjd",
-      "people": "4",
-      "date": "2022-04-14",
-      "time": "11:00",
-      "accept": true,
-      "total": 20,
-      "id": 2
     }
   ],
   "total": [
@@ -200,7 +191,7 @@
     {
       "id": 9,
       "month": "Sep",
-      "total": 3000
+      "total": 5000
     },
     {
       "id": 10,
@@ -220,34 +211,44 @@
   ],
   "chefs": [
     {
-      "id": 1,
-      "name": "Tom Hiddleston",
-      "age": 25,
+      "name": "Ton Heddition",
+      "age": 20,
       "sex": "male",
       "address": "London",
-      "role": "head-chef",
-      "phone": "3489674938",
-      "salary": 5000
+      "role": "HEAD-Chef",
+      "phone": "3467485968",
+      "salary": 5000,
+      "id": 1
     },
     {
-      "name": "Jason William",
-      "age": 35,
-      "sex": "Male",
+      "name": "Jenny Kim",
+      "age": 25,
+      "sex": "Female",
       "address": "Paris",
-      "role": "Cook",
-      "phone": "346979860",
-      "salary": 3000,
+      "role": "Head-chef",
+      "phone": "3857856569",
+      "salary": 6000,
       "id": 2
     },
     {
-      "name": "Jane",
-      "age": 30,
-      "sex": "Female",
-      "address": "Paris",
-      "role": "Cook",
-      "phone": "4752384985",
-      "salary": 3000,
-      "id": 3
+      "name": "asdas",
+      "age": 123,
+      "sex": "male",
+      "address": "asdasd",
+      "role": "asdas",
+      "phone": "12312312",
+      "salary": 1231,
+      "id": 5
+    },
+    {
+      "name": "asda",
+      "age": 123,
+      "sex": "male",
+      "address": "asdasd",
+      "role": "asdas",
+      "phone": "1231412312",
+      "salary": 12312,
+      "id": 6
     }
   ]
 }

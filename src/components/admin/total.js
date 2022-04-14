@@ -4,6 +4,7 @@ import Chart from 'react-apexcharts'
 import {RiCupLine, RiFileListLine} from 'react-icons/ri'
 import { AiOutlineUsergroupDelete } from 'react-icons/ai'
 import { chefsUrl, menusUrl, ordersUrl, totalUrl, usersUrl } from './Constant'
+import {SiCodechef} from 'react-icons/si'
 import CountUp from 'react-countup'
 export default function Total() {
     const url = totalUrl
@@ -139,13 +140,13 @@ export default function Total() {
             </div>
             <div className='p-6 flex rounded-md shadow-md justify-between items-center'>
                 <span className='px-4 py-4 mr-4 rounded-full bg-blue-400 opacity-70'>
-                    <AiOutlineUsergroupDelete className='text-5xl text-blue-700'/>
+                    <SiCodechef className='text-5xl text-blue-700'/>
                 </span>
                 <div>
                     <h3 className='text-4xl'>
                         <CountUp end={chefs.length} duration={chefs.length/5}/>
                     </h3>
-                    <p className='uppercase'>total users</p>
+                    <p className='uppercase'>total chefs</p>
                 </div>
             </div>
         </div>
